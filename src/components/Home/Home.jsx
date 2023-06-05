@@ -1,7 +1,7 @@
 import s from './Home.module.css';
 
 const Home = () => {
-  return <div>Home page</div>;
+  return <div>Welcome to tweets page</div>;
 };
 
 export default Home;

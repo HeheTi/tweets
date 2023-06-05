@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { getUsers } from 'services/api/usersApi';
-import s from './index';
 import UsersList from './UsersList';
 import { LIMIT_DATA } from 'services/constants';
+import s from './Users.module.css';
 
 const Users = ({ filter }) => {
   const [users, setUsers] = useState([]);
@@ -59,7 +59,11 @@ const Users = ({ filter }) => {
       <UsersList users={users} updateUser={updateUser} />
 
       {isShowBtn && (
-        <button onClick={() => setPage(prevPage => prevPage + 1)}>
+        <button
+          type="button"
+          className={s.btnLoadMore}
+          onClick={() => setPage(prevPage => prevPage + 1)}
+        >
           Load more
         </button>
       )}

@@ -1,4 +1,10 @@
 .flexWrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.link:hover {
+  font-weight: 700;
+  color: rgb(152, 66, 233);
 }

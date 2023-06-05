@@ -18,7 +18,9 @@ const Tweets = () => {
   return (
     <div>
       <div className={s.flexWrapper}>
-        <Link to="/">Go home</Link>
+        <Link to="/" className={s.link}>
+          Go home
+        </Link>
         <Filter setFilter={setFilter} filter={filter} />
       </div>
 

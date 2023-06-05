@@ -6,7 +6,7 @@ const UsersList = ({ users = [], updateUser }) => {
   return (
     <div>
       {users.length > 0 && (
-        <ul>
+        <ul className={s.list}>
           {users.map(({ id, avatar, followers, isFollowing, tweets, user }) => (
             <UsersListItem
               key={id}

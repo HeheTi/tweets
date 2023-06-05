@@ -32,15 +32,22 @@ const UsersListItem = ({
 
   return (
     <li className={s.item}>
-      <p>{user}</p>
-      <div>
-        <img src={avatar} alt={user} />
+      <p className={s.name}>{user}</p>
+      <div className={s.circule}>
+        <div className={s.imageWrapper}>
+          <img src={avatar} alt={user} />
+        </div>
       </div>
-      <p>{tweets} tweets</p>
+
+      <p className={s.tweets}>{tweets} tweets</p>
       <p>
-        {followers.toLocaleString('en-US', { useGrouping: true })} followeres
+        {followers.toLocaleString('en-US', { useGrouping: true })} followers
       </p>
-      <button type="button" onClick={handleFollowClick}>
+      <button
+        type="button"
+        onClick={handleFollowClick}
+        className={`${s.btn} ${isFollowing ? s.isActive : ''}`}
+      >
         {isFollowing ? 'following' : 'follow'}
       </button>
     </li>
