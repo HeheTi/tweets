@@ -1,0 +1,45 @@
+.header {
+  margin-bottom: 30px;
+}
+
+.navLink {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: right;
+  color: #d1ce36;
+  font-family: 'Verdana';
+  font-style: normal;
+  padding: 10px 0;
+}
+
+.navLink:not(:last-child) {
+  margin-right: 20px;
+}
+
+.navLink:hover:not(.active),
+:focus-visible:not(.active) {
+  color: #54be75;
+  background-color: inherit;
+}
+
+.active {
+  color: #1120a4;
+}
+
+@media screen and (min-width: 768px) {
+  .navLink {
+    font-size: 18px;
+    padding: 20px 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .navLink {
+    font-size: 20px;
+    padding: 30px 0;
+  }
+}

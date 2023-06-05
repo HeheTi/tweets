@@ -1,0 +1,48 @@
+.wrapperFilter {
+  position: relative;
+}
+
+.filterList {
+  position: absolute;
+  top: 140%;
+  right: 0;
+}
+
+.wrapperSelectedFilter {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.btnFilter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: transparent;
+  background-color: inherit;
+  width: 25px;
+  height: 25px;
+}
+
+.selectedFilter {
+  cursor: pointer;
+}
+
+.selectedFilter:hover {
+  font-weight: 700;
+  color: rgb(152, 66, 233);
+}
+
+.item {
+  padding: 3px 10px;
+  cursor: pointer;
+}
+.item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.item:hover {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
