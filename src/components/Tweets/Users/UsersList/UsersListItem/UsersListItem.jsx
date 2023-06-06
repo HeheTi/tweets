@@ -39,7 +39,9 @@ const UsersListItem = ({
         </div>
       </div>
 
-      <p className={s.tweets}>{tweets} tweets</p>
+      <p className={s.tweets}>
+        {tweets.toLocaleString('en-US', { useGrouping: true })} tweets
+      </p>
       <p>
         {followers.toLocaleString('en-US', { useGrouping: true })} followers
       </p>

@@ -1,0 +1,12 @@
+.wrapper {
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 30px;
+}
+
+.wrapperImg {
+  overflow: hidden;
+  border-radius: 20px;
+}

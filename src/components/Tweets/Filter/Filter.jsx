@@ -30,18 +30,12 @@ const Filter = ({ setFilter, filter }) => {
 
   return (
     <div className={s.wrapperFilter}>
-      <div className={s.wrapperSelectedFilter}>
-        <p
-          className={s.selectedFilter}
-          onClick={() => setIsShowFilter(prevState => !prevState)}
-        >
-          {showSelectedText(filter)}
-        </p>
-        <button
-          type="button"
-          onClick={() => setIsShowFilter(prevState => !prevState)}
-          className={s.btnFilter}
-        >
+      <div
+        className={s.wrapperSelectedFilter}
+        onClick={() => setIsShowFilter(prevState => !prevState)}
+      >
+        <p className={s.selectedFilter}>{showSelectedText(filter)}</p>
+        <button type="button" className={s.btnFilter}>
           <FilterIcon />
         </button>
       </div>
